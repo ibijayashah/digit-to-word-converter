@@ -1,13 +1,13 @@
 {
-    "compilerOptions": {
-      "target": "ES5",
-      "module": "commonjs",
-      "strict": true,
-      "outDir": "./dist",
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    },
-    "include": ["src"]
-  }
-  
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "strict": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true
+  },
+  "include": ["src"]
+}
