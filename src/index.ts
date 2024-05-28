@@ -107,34 +107,34 @@ const nepaliWords: Record<number, string> = {
   98: 'अन्ठान्नब्बे',
   99: 'उनान सय',
 }
-export const numberToWordConverter = (n: number): string => {
+export const digitToWord = (n: number): string => {
   if (n < 100) {
     return nepaliWords[n]
   } else if (n < 1000) {
     // Handle numbers in hundreds
     const hundreds = Math.floor(n / 100)
     const remainder = n % 100
-    return nepaliWords[hundreds] + ' सय' + (remainder !== 0 ? ' ' + numberToWordConverter(remainder) : '')
+    return nepaliWords[hundreds] + ' सय' + (remainder !== 0 ? ' ' + digitToWord(remainder) : '')
   } else if (n < 100000) {
     // Handle numbers in thousands
     const thousands = Math.floor(n / 1000)
     const remainder = n % 1000
-    return numberToWordConverter(thousands) + ' हजार' + (remainder !== 0 ? ' ' + numberToWordConverter(remainder) : '')
+    return digitToWord(thousands) + ' हजार' + (remainder !== 0 ? ' ' + digitToWord(remainder) : '')
   } else if (n < 10000000) {
     // Handle numbers in millions
     const millions = Math.floor(n / 100000)
     const remainder = n % 100000
-    return numberToWordConverter(millions) + ' लाख' + (remainder !== 0 ? ' ' + numberToWordConverter(remainder) : '')
+    return digitToWord(millions) + ' लाख' + (remainder !== 0 ? ' ' + digitToWord(remainder) : '')
   } else if (n < 1000000000) {
     // Handle numbers in billions
     const billions = Math.floor(n / 10000000)
     const remainder = n % 10000000
-    return numberToWordConverter(billions) + ' करोड' + (remainder !== 0 ? ' ' + numberToWordConverter(remainder) : '')
+    return digitToWord(billions) + ' करोड' + (remainder !== 0 ? ' ' + digitToWord(remainder) : '')
   } else if (n < 1000000000000) {
     // Handle numbers in trillions
     const trillions = Math.floor(n / 1000000000)
     const remainder = n % 1000000000
-    return numberToWordConverter(trillions) + ' अरब' + (remainder !== 0 ? ' ' + numberToWordConverter(remainder) : '')
+    return digitToWord(trillions) + ' अरब' + (remainder !== 0 ? ' ' + digitToWord(remainder) : '')
   }
 
   return 'Number not supported'

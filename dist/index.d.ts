@@ -4,4 +4,4 @@
  * @param n The number to be converted.
  * @returns The Nepali word representation of the number.
  */
-export declare const numberToWordConverter: (n: number) => string;
+export declare const digitToWord: (n: number) => string;

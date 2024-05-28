@@ -6,7 +6,7 @@
  * @returns The Nepali word representation of the number.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.numberToWordConverter = void 0;
+exports.digitToWord = void 0;
 var nepaliWords = {
     0: 'शून्य',
     1: 'एक',
@@ -109,7 +109,7 @@ var nepaliWords = {
     98: 'अन्ठान्नब्बे',
     99: 'उनान सय',
 };
-var numberToWordConverter = function (n) {
+var digitToWord = function (n) {
     if (n < 100) {
         return nepaliWords[n];
     }
@@ -117,32 +117,32 @@ var numberToWordConverter = function (n) {
         // Handle numbers in hundreds
         var hundreds = Math.floor(n / 100);
         var remainder = n % 100;
-        return nepaliWords[hundreds] + ' सय' + (remainder !== 0 ? ' ' + (0, exports.numberToWordConverter)(remainder) : '');
+        return nepaliWords[hundreds] + ' सय' + (remainder !== 0 ? ' ' + (0, exports.digitToWord)(remainder) : '');
     }
     else if (n < 100000) {
         // Handle numbers in thousands
         var thousands = Math.floor(n / 1000);
         var remainder = n % 1000;
-        return (0, exports.numberToWordConverter)(thousands) + ' हजार' + (remainder !== 0 ? ' ' + (0, exports.numberToWordConverter)(remainder) : '');
+        return (0, exports.digitToWord)(thousands) + ' हजार' + (remainder !== 0 ? ' ' + (0, exports.digitToWord)(remainder) : '');
     }
     else if (n < 10000000) {
         // Handle numbers in millions
         var millions = Math.floor(n / 100000);
         var remainder = n % 100000;
-        return (0, exports.numberToWordConverter)(millions) + ' लाख' + (remainder !== 0 ? ' ' + (0, exports.numberToWordConverter)(remainder) : '');
+        return (0, exports.digitToWord)(millions) + ' लाख' + (remainder !== 0 ? ' ' + (0, exports.digitToWord)(remainder) : '');
     }
     else if (n < 1000000000) {
         // Handle numbers in billions
         var billions = Math.floor(n / 10000000);
         var remainder = n % 10000000;
-        return (0, exports.numberToWordConverter)(billions) + ' करोड' + (remainder !== 0 ? ' ' + (0, exports.numberToWordConverter)(remainder) : '');
+        return (0, exports.digitToWord)(billions) + ' करोड' + (remainder !== 0 ? ' ' + (0, exports.digitToWord)(remainder) : '');
     }
     else if (n < 1000000000000) {
         // Handle numbers in trillions
         var trillions = Math.floor(n / 1000000000);
         var remainder = n % 1000000000;
-        return (0, exports.numberToWordConverter)(trillions) + ' अरब' + (remainder !== 0 ? ' ' + (0, exports.numberToWordConverter)(remainder) : '');
+        return (0, exports.digitToWord)(trillions) + ' अरब' + (remainder !== 0 ? ' ' + (0, exports.digitToWord)(remainder) : '');
     }
     return 'Number not supported';
 };
-exports.numberToWordConverter = numberToWordConverter;
+exports.digitToWord = digitToWord;
