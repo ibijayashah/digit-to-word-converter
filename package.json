@@ -1,5 +1,5 @@
 {
-  "name": "digit-to-word",
+  "name": "digit-to-word-converter",
   "version": "1.0.4",
   "description": "A package to convert numbers to their word representation. Eg: 123 => एक सय तेतीस",
   "main": "dist/index.js",
@@ -9,12 +9,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ibijayashah/digit-to-word.git"
+    "url": "git+https://github.com/ibijayashah/digit-to-word-converter.git"
   },
   "bugs": {
-    "url": "https://github.com/ibijayashah/digit-to-word/issues"
+    "url": "https://github.com/ibijayashah/digit-to-word-converter/issues"
   },
-  "homepage": "https://github.com/ibijayashah/digit-to-word#readme",
+  "homepage": "https://github.com/ibijayashah/digit-to-word-converter#readme",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
