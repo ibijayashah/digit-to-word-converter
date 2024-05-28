@@ -1,15 +1,62 @@
-#### Converts a number to its Nepali word representation
+### CONVERT DIGIT TO WORD
 
-You may convert any number into a Nepali word by using this function.
+Project that converts numbers to words in multiple languages (ENGLISH | NEPALI)
 
-**For instance,**
+## Table of Contents
 
-if you pass 1 it will return **एक**
+- [Installation](#installation)
+- [Feature](#feature)
+- [Usage](#usage)
+- [License](#license)
 
-or for 45 it will return **पैँतालीस**
+## Installation
 
-or for large number like 535000 it will return **पाँच लाख पैंतीस हजार**
+Open a terminal or command prompt and run:
 
-and so on...
+Using npm:
 
-It is capable to return up to 1 trillion (10^12) (१ हजार उनानसय अर्व)
+```shell
+$ npm i number-converter
+```
+
+Using yarn:
+
+```shell
+$ yarn add number-converter
+```
+
+Using pnpm:
+
+```shell
+$ pnpm add number-converter
+```
+
+> You should see the number-converter in your package.json
+
+## Features
+
+- Convert digit to word
+- Multi language
+- Focus on high performance
+
+### Usage
+
+```js
+import {numberToWordConverter} from 'number-converter';
+
+console.log(numberToWordConverter(1)));
+// output -> एक
+
+console.log(numberToWordConverter(45)));
+// output -> पैँतालीस
+
+console.log(numberToWordConverter(535000)));
+// output -> पाँच लाख पैंतीस हजार
+```
+
+> [!IMPORTANT]
+> It is capable to return up to 1 trillion (10^12) (१ हजार उनान सय अर्व)
+
+## License
+
+[MIT](LICENSE)
