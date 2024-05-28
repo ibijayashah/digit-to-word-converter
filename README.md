@@ -16,22 +16,22 @@ Open a terminal or command prompt and run:
 Using npm:
 
 ```shell
-$ npm i number-converter
+$ npm i digit-to-word
 ```
 
 Using yarn:
 
 ```shell
-$ yarn add number-converter
+$ yarn add digit-to-word
 ```
 
 Using pnpm:
 
 ```shell
-$ pnpm add number-converter
+$ pnpm add digit-to-word
 ```
 
-> You should see the number-converter in your package.json
+> You should see the digit-to-word in your package.json
 
 ## Features
 
@@ -42,15 +42,15 @@ $ pnpm add number-converter
 ### Usage
 
 ```js
-import {numberToWordConverter} from 'number-converter';
+import {digitToWord} from 'digit-to-word';
 
-console.log(numberToWordConverter(1)));
+console.log(digitToWord(1)));
 // output -> एक
 
-console.log(numberToWordConverter(45)));
+console.log(digitToWord(45)));
 // output -> पैँतालीस
 
-console.log(numberToWordConverter(535000)));
+console.log(digitToWord(535000)));
 // output -> पाँच लाख पैंतीस हजार
 ```
 
