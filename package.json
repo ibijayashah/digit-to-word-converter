@@ -1,12 +1,20 @@
 {
-  "name": "nepali-number-converter",
+  "name": "digit-to-word",
   "version": "1.0.4",
-  "description": "A package to convert numbers to their Nepali word representation.",
+  "description": "A package to convert numbers to their word representation. Eg: 123 => एक सय तेतीस",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibijayashah/digit-to-word.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ibijayashah/digit-to-word/issues"
+  },
+  "homepage": "https://github.com/ibijayashah/digit-to-word#readme",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,11 +25,12 @@
   },
   "keywords": [
     "nepali",
+    "digit to word",
     "number",
     "converter"
   ],
-  "author": "Your Name",
-  "license": "ISC",
+  "author": "Bijaya Shah",
+  "license": "MIT",
   "devDependencies": {
     "typescript": "^4.9.5",
     "eslint": "^8.35.0",
