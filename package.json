@@ -1,24 +1,40 @@
 {
-    "name": "nepali-number-converter",
-    "version": "1.0.4",
-    "description": "A package to convert numbers to their Nepali word representation.",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "tsc",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "nepali",
-        "number",
-        "converter"
-    ],
-    "author": "Your Name",
-    "license": "ISC",
-    "devDependencies": {
-        "typescript": "^4.9.5"
-    }
+  "name": "digit-to-word-converter",
+  "version": "1.0.4",
+  "description": "A package to convert numbers to their word representation. Eg: 123 => एक सय तेतीस",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibijayashah/digit-to-word-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ibijayashah/digit-to-word-converter/issues"
+  },
+  "homepage": "https://github.com/ibijayashah/digit-to-word-converter#readme",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx prettier --write src/**/*",
+    "format:check": "npx prettier --check src/**/*",
+    "lint": "eslint --ext .ts src",
+    "lint:fix": "eslint --quiet --ext .ts src --fix"
+  },
+  "keywords": [
+    "nepali",
+    "digit to word",
+    "number",
+    "converter"
+  ],
+  "author": "Bijaya Shah",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^34.0.0"
+  }
 }
