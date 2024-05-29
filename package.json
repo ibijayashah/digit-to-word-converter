@@ -1,6 +1,6 @@
 {
   "name": "digit-to-word-converter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A package to convert numbers to their word representation. Eg: 123 => एक सय तेतीस",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
